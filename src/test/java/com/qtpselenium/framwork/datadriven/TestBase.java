@@ -30,7 +30,7 @@ public class TestBase {
 	public static Properties prop;
 	public Logger Application_Log = null; //Logger.getLogger("devpinoyLogger");
 	public static WebDriver driver;
-	public static DesiredCapabilities capability;
+	//public static DesiredCapabilities capability;
 	
 	public static void init()
 	{
@@ -92,16 +92,16 @@ public class TestBase {
 	{
 		if(BrowserName.equalsIgnoreCase("Mozilla"))
 		{
-			//driver = new FirefoxDriver();
-			capability = DesiredCapabilities.firefox();
-			driver= new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"),capability);
+			driver = new FirefoxDriver();
+			//capability = DesiredCapabilities.firefox();
+			//driver= new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"),capability);
 		}
 		else if(BrowserName.equalsIgnoreCase("Chrome"))
 		{
-			//System.setProperty("webdriver.chrome.driver", prop.getProperty("Chromedriverexe"));
-			//driver= new ChromeDriver();
-			capability = DesiredCapabilities.chrome();
-			driver= new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"),capability);
+			System.setProperty("webdriver.chrome.driver", prop.getProperty("Chromedriverexe"));
+			driver= new ChromeDriver();
+			//capability = DesiredCapabilities.chrome();
+			//driver= new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"),capability);
 		}
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
