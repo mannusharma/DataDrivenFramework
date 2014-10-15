@@ -1,0 +1,364 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>TestNG:  Unit Test</title>
+<style type="text/css">
+table caption,table.info_table,table.param,table.passed,table.failed {margin-bottom:10px;border:1px solid #000099;border-collapse:collapse;empty-cells:show;}
+table.info_table td,table.info_table th,table.param td,table.param th,table.passed td,table.passed th,table.failed td,table.failed th {
+border:1px solid #000099;padding:.25em .5em .25em .5em
+}
+table.param th {vertical-align:bottom}
+td.numi,th.numi,td.numi_attn {
+text-align:right
+}
+tr.total td {font-weight:bold}
+table caption {
+text-align:center;font-weight:bold;
+}
+table.passed tr.stripe td,table tr.passedodd td {background-color: #00AA00;}
+table.passed td,table tr.passedeven td {background-color: #33FF33;}
+table.passed tr.stripe td,table tr.skippedodd td {background-color: #cccccc;}
+table.passed td,table tr.skippedodd td {background-color: #dddddd;}
+table.failed tr.stripe td,table tr.failedodd td,table.param td.numi_attn {background-color: #FF3333;}
+table.failed td,table tr.failedeven td,table.param tr.stripe td.numi_attn {background-color: #DD0000;}
+tr.stripe td,tr.stripe th {background-color: #E6EBF9;}
+p.totop {font-size:85%;text-align:center;border-bottom:2px black solid}
+div.shootout {padding:2em;border:3px #4854A8 solid}
+</style>
+</head>
+<body>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
+<tr><td style="text-align:left;padding-right:2em">Command line test</td><td class="numi">4</td><td class="numi">4</td><td class="numi_attn">5</td><td class="numi_attn">4</td><td class="numi">177.6 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+</table>
+<a id="summary"></a>
+<table cellspacing=0 cellpadding=0 class="passed">
+<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Time<br/>(Msecs)</th></tr>
+<tr><th colspan="4">Command line test &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="1">com.qtpselenium.framework.datadriven.PortFolioSuite.LoginTest<td><a href="#m1"><b>LoginTest</b>  </a></td><td class="numi">2</td><td class="numi">123492</td></tr>
+<tr class="failedeven"><td rowspan="1">com.qtpselenium.framework.datadriven.StockSuite.AddStockTest<td><a href="#m2"><b>AddStockTest</b>  </a></td><td class="numi">1</td><td class="numi">37545</td></tr>
+<tr class="failedodd"><td rowspan="1">com.qtpselenium.framework.datadriven.StockSuite.Test2<td><a href="#m3"><b>test2</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="failedeven"><td rowspan="1">com.qtpselenium.framework.datadriven.PortFolioSuite.LoginTest<td><a href="#m4"><b>LoginTest</b>  </a></td><td class="numi">2</td><td class="numi">123492</td></tr>
+<tr><th colspan="4">Command line test &#8212; skipped</th></tr>
+<tr class="skippedodd"><td rowspan="1">com.qtpselenium.framework.datadriven.PortFolioSuite.LeastPerAssetsTest<td><a href="#m5"><b>LeastPerAssetsTest</b>  </a></td><td class="numi">2</td><td class="numi">132</td></tr>
+<tr class="skippedeven"><td rowspan="1">com.qtpselenium.framework.datadriven.PortFolioSuite.LoginTest<td><a href="#m6"><b>LoginTest</b>  </a></td><td class="numi">1</td><td class="numi">37</td></tr>
+<tr class="skippedodd"><td rowspan="2">com.qtpselenium.framework.datadriven.StockSuite.AddStockTest<td><a href="#m7"><b>AddStockTest</b>  </a></td><td class="numi">2</td><td class="numi">87</td></tr><tr class="skippedodd"><td><a href="#m8"><b>AddStockTest</b>  </a></td><td class="numi">2</td><td class="numi">87</td></tr>
+<tr class="skippedeven"><td rowspan="1">com.qtpselenium.framework.datadriven.PortFolioSuite.LeastPerAssetsTest<td><a href="#m9"><b>LeastPerAssetsTest</b>  </a></td><td class="numi">2</td><td class="numi">132</td></tr>
+<tr><th colspan="4">Command line test &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="1">com.qtpselenium.framework.datadriven.PortFolioSuite.Test4<td><a href="#m10"><b>test4</b>  </a></td><td class="numi">1</td><td class="numi">1</td></tr>
+<tr class="passedeven"><td rowspan="1">com.qtpselenium.framework.datadriven.PortFolioSuite.Test5<td><a href="#m11"><b>test5</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="passedodd"><td rowspan="1">com.qtpselenium.framework.datadriven.PortFolioSuite.LeastPerAssetsTest<td><a href="#m12"><b>LeastPerAssetsTest</b>  </a></td><td class="numi">1</td><td class="numi">15149</td></tr>
+<tr class="passedeven"><td rowspan="1">com.qtpselenium.framework.datadriven.PortFolioSuite.Test3<td><a href="#m13"><b>test3</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+</table>
+<h1>Command line test</h1>
+<a id="m1"></a><h2>com.qtpselenium.framework.datadriven.PortFolioSuite.LoginTest:LoginTest</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">{Username=mannusharma.86@gmail.com, Password=caliber, Runmode=Y, Expected_Result=SUCCESS, Browser=Chrome, Result=}</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>element not visible
+  (Session info: chrome=37.0.2062.124)
+  (Driver info: chromedriver=2.10.267521,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.16 seconds
+Build info: version: &apos;2.43.1&apos;, revision: &apos;5163bce&apos;, time: &apos;2014-09-10 16:27:33&apos;
+System info: host: &apos;deepaksharma-HP&apos;, ip: &apos;192.168.247.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_11&apos;
+Session ID: 46cd568a67efffa31b42ed89e79c5b53
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\DEEPAK~1\AppData\Local\Temp\scoped_dir2716_15165}, rotatable=false, locationContextEnabled=true, version=37.0.2062.124, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]
+Command duration or timeout: 10.52 seconds
+Build info: version: &apos;2.28.0&apos;, revision: &apos;18309&apos;, time: &apos;2012-12-11 15:53:30&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_11&apos;
+Session ID: b0f00b6d-6927-4f16-b5d9-e56f463ca946
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\DEEPAK~1\AppData\Local\Temp\scoped_dir2716_15165}, rotatable=false, locationContextEnabled=true, webdriver.remote.sessionid=b0f00b6d-6927-4f16-b5d9-e56f463ca946, version=37.0.2062.124, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:187)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:533)
+<br/>at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:246)
+<br/>at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:89)
+<br/>at com.qtpselenium.framwork.datadriven.TestBase.input(TestBase.java:141)
+<br/>at com.qtpselenium.framwork.datadriven.TestBase.doLogin(TestBase.java:215)
+<br/>at com.qtpselenium.framework.datadriven.PortFolioSuite.LoginTest.LoginTest(LoginTest.java:32)
+<br/>36 lines not shown
+<p>Caused by Screen shot has been taken
+Build info: version: &apos;2.28.0&apos;, revision: &apos;18309&apos;, time: &apos;2012-12-11 15:53:30&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_11&apos;
+Driver info: driver.version: RemoteWebDriver</p>
+org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:125)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:533)
+<br/>at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:246)
+<br/>at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:89)
+<br/>at com.qtpselenium.framwork.datadriven.TestBase.input(TestBase.java:141)
+<br/>at com.qtpselenium.framwork.datadriven.TestBase.doLogin(TestBase.java:215)
+<br/>at com.qtpselenium.framework.datadriven.PortFolioSuite.LoginTest.LoginTest(LoginTest.java:32)
+<br/>36 lines not shown
+<p>Caused by element not visible
+  (Session info: chrome=37.0.2062.124)
+  (Driver info: chromedriver=2.10.267521,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.16 seconds
+Build info: version: &apos;2.43.1&apos;, revision: &apos;5163bce&apos;, time: &apos;2014-09-10 16:27:33&apos;
+System info: host: &apos;deepaksharma-HP&apos;, ip: &apos;192.168.247.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_11&apos;
+Session ID: 46cd568a67efffa31b42ed89e79c5b53
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\DEEPAK~1\AppData\Local\Temp\scoped_dir2716_15165}, rotatable=false, locationContextEnabled=true, version=37.0.2062.124, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]
+Build info: version: &apos;2.28.0&apos;, revision: &apos;18309&apos;, time: &apos;2012-12-11 15:53:30&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_11&apos;
+Driver info: driver.version: RemoteWebDriver</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+<br/>at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
+<br/>at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:89)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+<br/>at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+<br/>at java.lang.reflect.Method.invoke(Method.java:601)
+<br/>at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement$1.invoke(EventFiringWebDriver.java:331)
+<br/>at $Proxy2.sendKeys(Unknown Source)
+<br/>at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.sendKeys(EventFiringWebDriver.java:354)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+<br/>at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+<br/>at java.lang.reflect.Method.invoke(Method.java:601)
+<br/>at org.openqa.selenium.remote.server.KnownElements$1.invoke(KnownElements.java:63)
+<br/>at $Proxy3.sendKeys(Unknown Source)
+<br/>at org.openqa.selenium.remote.server.handler.SendKeys.call(SendKeys.java:49)
+<br/>at org.openqa.selenium.remote.server.handler.SendKeys.call(SendKeys.java:1)
+<br/>at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+<br/>at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+<br/>at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:169)
+<br/>at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1110)
+<br/>at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:603)
+<br/>at java.lang.Thread.run(Thread.java:722)
+<br/>1 lines not shown
+</td></tr>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m2"></a><h2>com.qtpselenium.framework.datadriven.StockSuite.AddStockTest:AddStockTest</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">{Runmode=Y, Stock Name=Dabur India Ltd., Purchase Price=50, Date Of Purchase=11/6/14, Quantity=30, Browser=Chrome, Result=}</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: &apos;2.28.0&apos;, revision: &apos;18309&apos;, time: &apos;2012-12-11 15:53:30&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_11&apos;
+Driver info: driver.version: RemoteWebDriver</p>
+org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:216)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:111)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:129)
+<br/>at com.qtpselenium.framwork.datadriven.TestBase.openBrowser(TestBase.java:104)
+<br/>at com.qtpselenium.framwork.datadriven.TestBase.doLogin(TestBase.java:207)
+<br/>at com.qtpselenium.framwork.datadriven.TestBase.defaultLogin(TestBase.java:222)
+<br/>at com.qtpselenium.framework.datadriven.StockSuite.AddStockTest.AddStockTest(AddStockTest.java:30)
+<br/>36 lines not shown
+<p>Caused by Connection reset</p>
+java.net.SocketInputStream.read(SocketInputStream.java:189)
+<br/>at java.net.SocketInputStream.read(SocketInputStream.java:121)
+<br/>at org.apache.http.impl.io.AbstractSessionInputBuffer.fillBuffer(AbstractSessionInputBuffer.java:166)
+<br/>at org.apache.http.impl.io.SocketInputBuffer.fillBuffer(SocketInputBuffer.java:90)
+<br/>at org.apache.http.impl.io.AbstractSessionInputBuffer.readLine(AbstractSessionInputBuffer.java:281)
+<br/>at org.apache.http.impl.conn.LoggingSessionInputBuffer.readLine(LoggingSessionInputBuffer.java:115)
+<br/>at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:92)
+<br/>at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:62)
+<br/>at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:254)
+<br/>at org.apache.http.impl.AbstractHttpClientConnection.receiveResponseHeader(AbstractHttpClientConnection.java:289)
+<br/>at org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:252)
+<br/>at org.apache.http.impl.conn.AbstractClientConnAdapter.receiveResponseHeader(AbstractClientConnAdapter.java:219)
+<br/>at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:300)
+<br/>at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:127)
+<br/>at org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:712)
+<br/>at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:517)
+<br/>at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:906)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.fallBackExecute(HttpCommandExecutor.java:331)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:310)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:506)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:216)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:111)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:129)
+<br/>at com.qtpselenium.framwork.datadriven.TestBase.openBrowser(TestBase.java:104)
+<br/>at com.qtpselenium.framwork.datadriven.TestBase.doLogin(TestBase.java:207)
+<br/>at com.qtpselenium.framwork.datadriven.TestBase.defaultLogin(TestBase.java:222)
+<br/>at com.qtpselenium.framework.datadriven.StockSuite.AddStockTest.AddStockTest(AddStockTest.java:30)
+<br/>36 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m3"></a><h2>com.qtpselenium.framework.datadriven.StockSuite.Test2:test2</h2>
+<div style="padding-left:3em">
+<p>
+Method org.testng.internal.ConstructorOrMethod@e59cdb75 requires a @DataProvider named : SuiteBDataProvider in class com.qtpselenium.framework.datadriven.utility.TestDataProvider</p>
+org.testng.internal.Parameters.findDataProvider(Parameters.java:254)
+<br/>at org.testng.internal.Parameters.handleParameters(Parameters.java:400)
+<br/>at org.testng.internal.Invoker.handleParameters(Invoker.java:1316)
+<br/>at org.testng.internal.Invoker.createParameters(Invoker.java:1018)
+<br/>at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1118)
+<br/>at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+<br/>at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+<br/>at org.testng.TestRunner.runWorkers(TestRunner.java:1178)
+<br/>at org.testng.TestRunner.privateRun(TestRunner.java:757)
+<br/>at org.testng.TestRunner.run(TestRunner.java:608)
+<br/>at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+<br/>at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+<br/>at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+<br/>at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+<br/>at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+<br/>at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+<br/>at org.testng.TestNG.runSuitesSequentially(TestNG.java:1158)
+<br/>at org.testng.TestNG.runSuitesLocally(TestNG.java:1083)
+<br/>at org.testng.TestNG.run(TestNG.java:999)
+<br/>at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+<br/>at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+<br/>at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+<br/>at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+<br/>at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+<br/>at java.lang.reflect.Method.invoke(Method.java:601)
+<br/>at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+<br/>at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+<br/>at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+<br/>at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+<br/>at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+<br/>1 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m4"></a><h2>com.qtpselenium.framework.datadriven.PortFolioSuite.LoginTest:LoginTest</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">{Username=C22, Password=C33, Runmode=Y, Expected_Result=SUCCESS, Browser=Mozilla, Result=}</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>Element is not currently visible and so may not be interacted with
+Build info: version: &apos;2.43.1&apos;, revision: &apos;5163bce&apos;, time: &apos;2014-09-10 16:27:33&apos;
+System info: host: &apos;deepaksharma-HP&apos;, ip: &apos;192.168.247.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_11&apos;
+Driver info: driver.version: unknown
+Command duration or timeout: 10.55 seconds
+Build info: version: &apos;2.28.0&apos;, revision: &apos;18309&apos;, time: &apos;2012-12-11 15:53:30&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_11&apos;
+Session ID: e6ec2bcd-bef2-46d1-81b8-903a17b95da0
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, rotatable=false, locationContextEnabled=true, webdriver.remote.sessionid=e6ec2bcd-bef2-46d1-81b8-903a17b95da0, version=32.0.3, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=true, takesScreenshot=true}]</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:187)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:533)
+<br/>at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:246)
+<br/>at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:89)
+<br/>at com.qtpselenium.framwork.datadriven.TestBase.input(TestBase.java:141)
+<br/>at com.qtpselenium.framwork.datadriven.TestBase.doLogin(TestBase.java:215)
+<br/>at com.qtpselenium.framework.datadriven.PortFolioSuite.LoginTest.LoginTest(LoginTest.java:32)
+<br/>36 lines not shown
+<p>Caused by Screen shot has been taken
+Build info: version: &apos;2.28.0&apos;, revision: &apos;18309&apos;, time: &apos;2012-12-11 15:53:30&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_11&apos;
+Driver info: driver.version: RemoteWebDriver</p>
+org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:125)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:533)
+<br/>at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:246)
+<br/>at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:89)
+<br/>at com.qtpselenium.framwork.datadriven.TestBase.input(TestBase.java:141)
+<br/>at com.qtpselenium.framwork.datadriven.TestBase.doLogin(TestBase.java:215)
+<br/>at com.qtpselenium.framework.datadriven.PortFolioSuite.LoginTest.LoginTest(LoginTest.java:32)
+<br/>36 lines not shown
+<p>Caused by Element is not currently visible and so may not be interacted with
+Build info: version: &apos;2.43.1&apos;, revision: &apos;5163bce&apos;, time: &apos;2014-09-10 16:27:33&apos;
+System info: host: &apos;deepaksharma-HP&apos;, ip: &apos;192.168.247.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_11&apos;
+Driver info: driver.version: unknown
+Build info: version: &apos;2.28.0&apos;, revision: &apos;18309&apos;, time: &apos;2012-12-11 15:53:30&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_11&apos;
+Driver info: driver.version: unknown</p>
+&lt;anonymous class&gt;.fxdriver.preconditions.visible(file:///C:/Users/DEEPAK~1/AppData/Local/Temp/anonymous6819174014773935786webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:8936:5)
+<br/>at &lt;anonymous class&gt;.DelayedCommand.prototype.checkPreconditions_(file:///C:/Users/DEEPAK~1/AppData/Local/Temp/anonymous6819174014773935786webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11595:1)
+<br/>at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/DEEPAK~1/AppData/Local/Temp/anonymous6819174014773935786webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11612:11)
+<br/>at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/DEEPAK~1/AppData/Local/Temp/anonymous6819174014773935786webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:548:5)
+<br/>1 lines not shown
+</td></tr>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m5"></a><h2>com.qtpselenium.framework.datadriven.PortFolioSuite.LeastPerAssetsTest:LeastPerAssetsTest</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">{Runmode=N, Browser=Chrome, Result=}</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>Skipping the test LeastPerAssetsTest inside the test suite PortFolioSuite</p>
+com.qtpselenium.framwork.datadriven.TestBase.ValidateRunmodes(TestBase.java:83)
+<br/>at com.qtpselenium.framework.datadriven.PortFolioSuite.LeastPerAssetsTest.LeastPerAssetsTest(LeastPerAssetsTest.java:30)
+<br/>36 lines not shown
+</td></tr>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m6"></a><h2>com.qtpselenium.framework.datadriven.PortFolioSuite.LoginTest:LoginTest</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">{Username=C23, Password=C34, Runmode=N, Expected_Result=FAILURE, Browser=Chrome, Result=}</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>Skipping the test LoginTest inside the test suite PortFolioSuite</p>
+com.qtpselenium.framwork.datadriven.TestBase.ValidateRunmodes(TestBase.java:83)
+<br/>at com.qtpselenium.framework.datadriven.PortFolioSuite.LoginTest.LoginTest(LoginTest.java:30)
+<br/>36 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m7"></a><h2>com.qtpselenium.framework.datadriven.StockSuite.AddStockTest:AddStockTest</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">{Runmode=N, Stock Name=Wipro Ltd., Purchase Price=200, Date Of Purchase=4/6/14, Quantity=20, Browser=Chrome, Result=}</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>Skipping the test AddStockTest inside the test suite StockSuite</p>
+com.qtpselenium.framwork.datadriven.TestBase.ValidateRunmodes(TestBase.java:83)
+<br/>at com.qtpselenium.framework.datadriven.StockSuite.AddStockTest.AddStockTest(AddStockTest.java:29)
+<br/>36 lines not shown
+</td></tr>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m8"></a><h2>com.qtpselenium.framework.datadriven.StockSuite.AddStockTest:AddStockTest</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">{Runmode=N, Stock Name=Bharti Airtel Ltd., Purchase Price=100, Date Of Purchase=4/6/13, Quantity=10, Browser=Mozilla, Result=}</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>Skipping the test AddStockTest inside the test suite StockSuite</p>
+com.qtpselenium.framwork.datadriven.TestBase.ValidateRunmodes(TestBase.java:83)
+<br/>at com.qtpselenium.framework.datadriven.StockSuite.AddStockTest.AddStockTest(AddStockTest.java:29)
+<br/>36 lines not shown
+</td></tr>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m9"></a><h2>com.qtpselenium.framework.datadriven.PortFolioSuite.LeastPerAssetsTest:LeastPerAssetsTest</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">{Runmode=N, Browser=Chrome, Result=}</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>Skipping the test LeastPerAssetsTest inside the test suite PortFolioSuite</p>
+com.qtpselenium.framwork.datadriven.TestBase.ValidateRunmodes(TestBase.java:83)
+<br/>at com.qtpselenium.framework.datadriven.PortFolioSuite.LeastPerAssetsTest.LeastPerAssetsTest(LeastPerAssetsTest.java:30)
+<br/>36 lines not shown
+</td></tr>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m10"></a><h2>com.qtpselenium.framework.datadriven.PortFolioSuite.Test4:test4</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m11"></a><h2>com.qtpselenium.framework.datadriven.PortFolioSuite.Test5:test5</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m12"></a><h2>com.qtpselenium.framework.datadriven.PortFolioSuite.LeastPerAssetsTest:LeastPerAssetsTest</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">{Runmode=Y, Browser=Chrome, Result=}</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m13"></a><h2>com.qtpselenium.framework.datadriven.PortFolioSuite.Test3:test3</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+</body></html>

@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite hostname="deepaksharma-HP" name="com.qtpselenium.framework.datadriven.PortFolioSuite.LeastPerAssetsTest" tests="13" failures="3" timestamp="15 Oct 2014 02:39:58 GMT" time="177.573" errors="0">
+  <testcase name="LeastPerAssetsTest" time="15.149" classname="com.qtpselenium.framework.datadriven.PortFolioSuite.LeastPerAssetsTest"/>
+  <testcase name="LeastPerAssetsTest" time="0.08" classname="com.qtpselenium.framework.datadriven.PortFolioSuite.LeastPerAssetsTest">
+    <skipped/>
+  </testcase>
+  <testcase name="LeastPerAssetsTest" time="0.052" classname="com.qtpselenium.framework.datadriven.PortFolioSuite.LeastPerAssetsTest">
+    <skipped/>
+  </testcase>
+  <testcase name="LoginTest" time="25.114" classname="com.qtpselenium.framework.datadriven.PortFolioSuite.LoginTest">
+    <failure type="org.openqa.selenium.ElementNotVisibleException" message="Element is not currently visible and so may not be interacted with
+Build info: version: &amp;apos;2.43.1&amp;apos;, revision: &amp;apos;5163bce&amp;apos;, time: &amp;apos;2014-09-10 16:27:33&amp;apos;
+System info: host: &amp;apos;deepaksharma-HP&amp;apos;, ip: &amp;apos;192.168.247.1&amp;apos;, os.name: &amp;apos;Windows 7&amp;apos;, os.arch: &amp;apos;x86&amp;apos;, os.version: &amp;apos;6.1&amp;apos;, java.version: &amp;apos;1.7.0_11&amp;apos;
+Driver info: driver.version: unknown
+Command duration or timeout: 10.55 seconds
+Build info: version: &amp;apos;2.28.0&amp;apos;, revision: &amp;apos;18309&amp;apos;, time: &amp;apos;2012-12-11 15:53:30&amp;apos;
+System info: os.name: &amp;apos;Windows 7&amp;apos;, os.arch: &amp;apos;x86&amp;apos;, os.version: &amp;apos;6.1&amp;apos;, java.version: &amp;apos;1.7.0_11&amp;apos;
+Session ID: e6ec2bcd-bef2-46d1-81b8-903a17b95da0
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, rotatable=false, locationContextEnabled=true, webdriver.remote.sessionid=e6ec2bcd-bef2-46d1-81b8-903a17b95da0, version=32.0.3, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=true, takesScreenshot=true}]">
+      <![CDATA[org.openqa.selenium.ElementNotVisibleException: Element is not currently visible and so may not be interacted with
+Build info: version: '2.43.1', revision: '5163bce', time: '2014-09-10 16:27:33'
+System info: host: 'deepaksharma-HP', ip: '192.168.247.1', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.7.0_11'
+Driver info: driver.version: unknown
+Command duration or timeout: 10.55 seconds
+Build info: version: '2.28.0', revision: '18309', time: '2012-12-11 15:53:30'
+System info: os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.7.0_11'
+Session ID: e6ec2bcd-bef2-46d1-81b8-903a17b95da0
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, rotatable=false, locationContextEnabled=true, webdriver.remote.sessionid=e6ec2bcd-bef2-46d1-81b8-903a17b95da0, version=32.0.3, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=true, takesScreenshot=true}]
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:187)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:533)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:246)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:89)
+	at com.qtpselenium.framwork.datadriven.TestBase.input(TestBase.java:141)
+	at com.qtpselenium.framwork.datadriven.TestBase.doLogin(TestBase.java:215)
+	at com.qtpselenium.framework.datadriven.PortFolioSuite.LoginTest.LoginTest(LoginTest.java:32)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: org.openqa.selenium.remote.ScreenshotException: Screen shot has been taken
+Build info: version: '2.28.0', revision: '18309', time: '2012-12-11 15:53:30'
+System info: os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.7.0_11'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:125)
+	... 41 more
+Caused by: org.openqa.selenium.ElementNotVisibleException: Element is not currently visible and so may not be interacted with
+Build info: version: '2.43.1', revision: '5163bce', time: '2014-09-10 16:27:33'
+System info: host: 'deepaksharma-HP', ip: '192.168.247.1', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.7.0_11'
+Driver info: driver.version: unknown
+Build info: version: '2.28.0', revision: '18309', time: '2012-12-11 15:53:30'
+System info: os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.7.0_11'
+Driver info: driver.version: unknown
+	at <anonymous class>.fxdriver.preconditions.visible(file:///C:/Users/DEEPAK~1/AppData/Local/Temp/anonymous6819174014773935786webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:8936:5)
+	at <anonymous class>.DelayedCommand.prototype.checkPreconditions_(file:///C:/Users/DEEPAK~1/AppData/Local/Temp/anonymous6819174014773935786webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11595:1)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/DEEPAK~1/AppData/Local/Temp/anonymous6819174014773935786webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11612:11)
+	at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///C:/Users/DEEPAK~1/AppData/Local/Temp/anonymous6819174014773935786webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:548:5)
+... Removed 30 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="LoginTest" time="0.037" classname="com.qtpselenium.framework.datadriven.PortFolioSuite.LoginTest">
+    <skipped/>
+  </testcase>
+  <testcase name="LoginTest" time="98.332" classname="com.qtpselenium.framework.datadriven.PortFolioSuite.LoginTest">
+    <failure type="org.openqa.selenium.ElementNotVisibleException" message="element not visible
+  (Session info: chrome=37.0.2062.124)
+  (Driver info: chromedriver=2.10.267521,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.16 seconds
+Build info: version: &amp;apos;2.43.1&amp;apos;, revision: &amp;apos;5163bce&amp;apos;, time: &amp;apos;2014-09-10 16:27:33&amp;apos;
+System info: host: &amp;apos;deepaksharma-HP&amp;apos;, ip: &amp;apos;192.168.247.1&amp;apos;, os.name: &amp;apos;Windows 7&amp;apos;, os.arch: &amp;apos;x86&amp;apos;, os.version: &amp;apos;6.1&amp;apos;, java.version: &amp;apos;1.7.0_11&amp;apos;
+Session ID: 46cd568a67efffa31b42ed89e79c5b53
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\DEEPAK~1\AppData\Local\Temp\scoped_dir2716_15165}, rotatable=false, locationContextEnabled=true, version=37.0.2062.124, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]
+Command duration or timeout: 10.52 seconds
+Build info: version: &amp;apos;2.28.0&amp;apos;, revision: &amp;apos;18309&amp;apos;, time: &amp;apos;2012-12-11 15:53:30&amp;apos;
+System info: os.name: &amp;apos;Windows 7&amp;apos;, os.arch: &amp;apos;x86&amp;apos;, os.version: &amp;apos;6.1&amp;apos;, java.version: &amp;apos;1.7.0_11&amp;apos;
+Session ID: b0f00b6d-6927-4f16-b5d9-e56f463ca946
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\DEEPAK~1\AppData\Local\Temp\scoped_dir2716_15165}, rotatable=false, locationContextEnabled=true, webdriver.remote.sessionid=b0f00b6d-6927-4f16-b5d9-e56f463ca946, version=37.0.2062.124, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]">
+      <![CDATA[org.openqa.selenium.ElementNotVisibleException: element not visible
+  (Session info: chrome=37.0.2062.124)
+  (Driver info: chromedriver=2.10.267521,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.16 seconds
+Build info: version: '2.43.1', revision: '5163bce', time: '2014-09-10 16:27:33'
+System info: host: 'deepaksharma-HP', ip: '192.168.247.1', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.7.0_11'
+Session ID: 46cd568a67efffa31b42ed89e79c5b53
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\DEEPAK~1\AppData\Local\Temp\scoped_dir2716_15165}, rotatable=false, locationContextEnabled=true, version=37.0.2062.124, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]
+Command duration or timeout: 10.52 seconds
+Build info: version: '2.28.0', revision: '18309', time: '2012-12-11 15:53:30'
+System info: os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.7.0_11'
+Session ID: b0f00b6d-6927-4f16-b5d9-e56f463ca946
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\DEEPAK~1\AppData\Local\Temp\scoped_dir2716_15165}, rotatable=false, locationContextEnabled=true, webdriver.remote.sessionid=b0f00b6d-6927-4f16-b5d9-e56f463ca946, version=37.0.2062.124, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, webStorageEnabled=true, nativeEvents=true, applicationCacheEnabled=false, takesScreenshot=true}]
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:187)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:533)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:246)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:89)
+	at com.qtpselenium.framwork.datadriven.TestBase.input(TestBase.java:141)
+	at com.qtpselenium.framwork.datadriven.TestBase.doLogin(TestBase.java:215)
+	at com.qtpselenium.framework.datadriven.PortFolioSuite.LoginTest.LoginTest(LoginTest.java:32)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: org.openqa.selenium.remote.ScreenshotException: Screen shot has been taken
+Build info: version: '2.28.0', revision: '18309', time: '2012-12-11 15:53:30'
+System info: os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.7.0_11'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:125)
+	... 41 more
+Caused by: org.openqa.selenium.ElementNotVisibleException: element not visible
+  (Session info: chrome=37.0.2062.124)
+  (Driver info: chromedriver=2.10.267521,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.16 seconds
+Build info: version: '2.43.1', revision: '5163bce', time: '2014-09-10 16:27:33'
+System info: host: 'deepaksharma-HP', ip: '192.168.247.1', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.7.0_11'
+Session ID: 46cd568a67efffa31b42ed89e79c5b53
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=C:\Users\DEEPAK~1\AppData\Local\Temp\scoped_dir2716_15165}, rotatable=false, locationContextEnabled=true, version=37.0.2062.124, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]
+Build info: version: '2.28.0', revision: '18309', time: '2012-12-11 15:53:30'
+System info: os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.7.0_11'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:89)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement$1.invoke(EventFiringWebDriver.java:331)
+	at $Proxy2.sendKeys(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.sendKeys(EventFiringWebDriver.java:354)
+	at org.openqa.selenium.remote.server.KnownElements$1.invoke(KnownElements.java:63)
+	at $Proxy3.sendKeys(Unknown Source)
+	at org.openqa.selenium.remote.server.handler.SendKeys.call(SendKeys.java:49)
+	at org.openqa.selenium.remote.server.handler.SendKeys.call(SendKeys.java:1)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:169)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1110)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:603)
+	at java.lang.Thread.run(Thread.java:722)
+... Removed 42 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="test3" time="0.0" classname="com.qtpselenium.framework.datadriven.PortFolioSuite.Test3"/>
+  <testcase name="test4" time="0.001" classname="com.qtpselenium.framework.datadriven.PortFolioSuite.Test4"/>
+  <testcase name="test5" time="0.0" classname="com.qtpselenium.framework.datadriven.PortFolioSuite.Test5"/>
+  <testcase name="AddStockTest" time="0.046" classname="com.qtpselenium.framework.datadriven.StockSuite.AddStockTest">
+    <skipped/>
+  </testcase>
+  <testcase name="AddStockTest" time="0.041" classname="com.qtpselenium.framework.datadriven.StockSuite.AddStockTest">
+    <skipped/>
+  </testcase>
+  <testcase name="AddStockTest" time="37.545" classname="com.qtpselenium.framework.datadriven.StockSuite.AddStockTest">
+    <failure type="org.openqa.selenium.remote.UnreachableBrowserException" message="Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: &amp;apos;2.28.0&amp;apos;, revision: &amp;apos;18309&amp;apos;, time: &amp;apos;2012-12-11 15:53:30&amp;apos;
+System info: os.name: &amp;apos;Windows 7&amp;apos;, os.arch: &amp;apos;x86&amp;apos;, os.version: &amp;apos;6.1&amp;apos;, java.version: &amp;apos;1.7.0_11&amp;apos;
+Driver info: driver.version: RemoteWebDriver">
+      <![CDATA[org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '2.28.0', revision: '18309', time: '2012-12-11 15:53:30'
+System info: os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.7.0_11'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:216)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:111)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:129)
+	at com.qtpselenium.framwork.datadriven.TestBase.openBrowser(TestBase.java:104)
+	at com.qtpselenium.framwork.datadriven.TestBase.doLogin(TestBase.java:207)
+	at com.qtpselenium.framwork.datadriven.TestBase.defaultLogin(TestBase.java:222)
+	at com.qtpselenium.framework.datadriven.StockSuite.AddStockTest.AddStockTest(AddStockTest.java:30)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:189)
+	at java.net.SocketInputStream.read(SocketInputStream.java:121)
+	at org.apache.http.impl.io.AbstractSessionInputBuffer.fillBuffer(AbstractSessionInputBuffer.java:166)
+	at org.apache.http.impl.io.SocketInputBuffer.fillBuffer(SocketInputBuffer.java:90)
+	at org.apache.http.impl.io.AbstractSessionInputBuffer.readLine(AbstractSessionInputBuffer.java:281)
+	at org.apache.http.impl.conn.LoggingSessionInputBuffer.readLine(LoggingSessionInputBuffer.java:115)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:92)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:62)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:254)
+	at org.apache.http.impl.AbstractHttpClientConnection.receiveResponseHeader(AbstractHttpClientConnection.java:289)
+	at org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:252)
+	at org.apache.http.impl.conn.AbstractClientConnAdapter.receiveResponseHeader(AbstractClientConnAdapter.java:219)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:300)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:127)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:712)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:517)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:906)
+	at org.openqa.selenium.remote.HttpCommandExecutor.fallBackExecute(HttpCommandExecutor.java:331)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:310)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:506)
+	... 42 more
+... Removed 26 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="test2" time="0.001" classname="com.qtpselenium.framework.datadriven.StockSuite.Test2">
+    <skipped/>
+  </testcase>
+</testsuite>

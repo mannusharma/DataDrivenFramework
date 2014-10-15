@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">3 suites, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Stock_Suite">
+              <span class="suite-name border-skipped">Stock Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Stock_Suite">
+                    <span>C:\Users\deepak sharma\Workspace\webdriver_DataDrivenFramework_TestNG\src\test\resources\StockSuite.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Stock_Suite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Stock_Suite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Stock_Suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Stock_Suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Stock_Suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Stock_Suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">3 methods,  2 skipped,  1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Stock_Suite" class="hide-methods skipped suite-Stock_Suite"> (hide)</a> <!-- hide-methods skipped suite-Stock_Suite -->
+                      <a href="#" panel-name="suite-Stock_Suite" class="show-methods skipped suite-Stock_Suite"> (show)</a> <!-- show-methods skipped suite-Stock_Suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Stock_Suite">
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Stock_Suite" title="com.qtpselenium.framework.datadriven.StockSuite.AddStockTest" hash-for-method="AddStockTest({Runmode=N, Stock Name=Bharti Airtel Ltd., Purchase Price=100, Date Of Purchase=4/6/13, Quantity=10,...)">AddStockTest({Runmode=N, Stock Name=Bharti Airtel Ltd., Purchase Price=100, Date Of Purchase=4/6/13, Quantity=10,...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Stock_Suite" title="com.qtpselenium.framework.datadriven.StockSuite.AddStockTest" hash-for-method="AddStockTest({Runmode=N, Stock Name=Wipro Ltd., Purchase Price=200, Date Of Purchase=4/6/14, Quantity=20, Browser...)">AddStockTest({Runmode=N, Stock Name=Wipro Ltd., Purchase Price=200, Date Of Purchase=4/6/14, Quantity=20, Browser...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Stock_Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Stock_Suite" class="hide-methods passed suite-Stock_Suite"> (hide)</a> <!-- hide-methods passed suite-Stock_Suite -->
+                      <a href="#" panel-name="suite-Stock_Suite" class="show-methods passed suite-Stock_Suite"> (show)</a> <!-- show-methods passed suite-Stock_Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Stock_Suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Stock_Suite" title="com.qtpselenium.framework.datadriven.StockSuite.AddStockTest" hash-for-method="AddStockTest({Runmode=Y, Stock Name=Dabur India Ltd., Purchase Price=50, Date Of Purchase=11/6/14, Quantity=30, B...)">AddStockTest({Runmode=Y, Stock Name=Dabur India Ltd., Purchase Price=50, Date Of Purchase=11/6/14, Quantity=30, B...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Stock_Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Portfolio_Test">
+              <span class="suite-name border-failed">Portfolio Test</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Portfolio_Test">
+                    <span>C:\Users\deepak sharma\Workspace\webdriver_DataDrivenFramework_TestNG\src\test\resources\PortFolioSuite.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Portfolio_Test">
+                    <span class="test-stats">2 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Portfolio_Test">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Portfolio_Test">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Portfolio_Test">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Portfolio_Test">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Portfolio_Test">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">6 methods, 1 failed,  3 skipped,  2 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Portfolio_Test" class="hide-methods failed suite-Portfolio_Test"> (hide)</a> <!-- hide-methods failed suite-Portfolio_Test -->
+                      <a href="#" panel-name="suite-Portfolio_Test" class="show-methods failed suite-Portfolio_Test"> (show)</a> <!-- show-methods failed suite-Portfolio_Test -->
+                    </span>
+                    <div class="method-list-content failed suite-Portfolio_Test">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Portfolio_Test" title="com.qtpselenium.framework.datadriven.PortFolioSuite.LoginTest" hash-for-method="LoginTest({Username=C22, Password=C33, Runmode=Y, Expected_Result=SUCCESS, Browser=Mozilla, Result=})">LoginTest({Username=C22, Password=C33, Runmode=Y, Expected_Result=SUCCESS, Browser=Mozilla, Result=})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Portfolio_Test -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Portfolio_Test" class="hide-methods skipped suite-Portfolio_Test"> (hide)</a> <!-- hide-methods skipped suite-Portfolio_Test -->
+                      <a href="#" panel-name="suite-Portfolio_Test" class="show-methods skipped suite-Portfolio_Test"> (show)</a> <!-- show-methods skipped suite-Portfolio_Test -->
+                    </span>
+                    <div class="method-list-content skipped suite-Portfolio_Test">
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Portfolio_Test" title="com.qtpselenium.framework.datadriven.PortFolioSuite.LeastPerAssetsTest" hash-for-method="LeastPerAssetsTest({Runmode=N, Browser=Chrome, Result=})">LeastPerAssetsTest({Runmode=N, Browser=Chrome, Result=})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Portfolio_Test" title="com.qtpselenium.framework.datadriven.PortFolioSuite.LeastPerAssetsTest" hash-for-method="LeastPerAssetsTest({Runmode=N, Browser=Chrome, Result=})">LeastPerAssetsTest({Runmode=N, Browser=Chrome, Result=})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Portfolio_Test" title="com.qtpselenium.framework.datadriven.PortFolioSuite.LoginTest" hash-for-method="LoginTest({Username=C23, Password=C34, Runmode=N, Expected_Result=FAILURE, Browser=Chrome, Result=})">LoginTest({Username=C23, Password=C34, Runmode=N, Expected_Result=FAILURE, Browser=Chrome, Result=})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Portfolio_Test -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Portfolio_Test" class="hide-methods passed suite-Portfolio_Test"> (hide)</a> <!-- hide-methods passed suite-Portfolio_Test -->
+                      <a href="#" panel-name="suite-Portfolio_Test" class="show-methods passed suite-Portfolio_Test"> (show)</a> <!-- show-methods passed suite-Portfolio_Test -->
+                    </span>
+                    <div class="method-list-content passed suite-Portfolio_Test">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Portfolio_Test" title="com.qtpselenium.framework.datadriven.PortFolioSuite.LeastPerAssetsTest" hash-for-method="LeastPerAssetsTest({Runmode=Y, Browser=Chrome, Result=})">LeastPerAssetsTest({Runmode=Y, Browser=Chrome, Result=})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Portfolio_Test" title="com.qtpselenium.framework.datadriven.PortFolioSuite.LoginTest" hash-for-method="LoginTest({Username=mannusharma.86@gmail.com, Password=caliber, Runmode=Y, Expected_Result=SUCCESS, Browser=Ch...)">LoginTest({Username=mannusharma.86@gmail.com, Password=caliber, Runmode=Y, Expected_Result=SUCCESS, Browser=Ch...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Portfolio_Test -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Stock_Suite" class="panel Stock_Suite">
+          <div class="suite-Stock_Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.qtpselenium.framework.datadriven.StockSuite.AddStockTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="AddStockTest({Runmode=N, Stock Name=Bharti Airtel Ltd., Purchase Price=100, Date Of Purchase=4/6/13, Quantity=10,...)">
+                  </a> <!-- AddStockTest({Runmode=N, Stock Name=Bharti Airtel Ltd., Purchase Price=100, Date Of Purchase=4/6/13, Quantity=10,...) -->
+                  <span class="method-name">AddStockTest</span>
+                  <span class="parameters">({Runmode=N, Stock Name=Bharti Airtel Ltd., Purchase Price=100, Date Of Purchase=4/6/13, Quantity=10, Browser=Mozilla, Result=})</span>
+                  <div class="stack-trace">org.testng.SkipException: Skipping the test AddStockTest inside the test suite StockSuite
+	at com.qtpselenium.framwork.datadriven.TestBase.ValidateRunmodes(TestBase.java:78)
+	at com.qtpselenium.framework.datadriven.StockSuite.AddStockTest.AddStockTest(AddStockTest.java:26)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="AddStockTest({Runmode=N, Stock Name=Wipro Ltd., Purchase Price=200, Date Of Purchase=4/6/14, Quantity=20, Browser...)">
+                  </a> <!-- AddStockTest({Runmode=N, Stock Name=Wipro Ltd., Purchase Price=200, Date Of Purchase=4/6/14, Quantity=20, Browser...) -->
+                  <span class="method-name">AddStockTest</span>
+                  <span class="parameters">({Runmode=N, Stock Name=Wipro Ltd., Purchase Price=200, Date Of Purchase=4/6/14, Quantity=20, Browser=Chrome, Result=})</span>
+                  <div class="stack-trace">org.testng.SkipException: Skipping the test AddStockTest inside the test suite StockSuite
+	at com.qtpselenium.framwork.datadriven.TestBase.ValidateRunmodes(TestBase.java:78)
+	at com.qtpselenium.framework.datadriven.StockSuite.AddStockTest.AddStockTest(AddStockTest.java:26)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Stock_Suite-class-skipped -->
+          <div class="suite-Stock_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.qtpselenium.framework.datadriven.StockSuite.AddStockTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="AddStockTest({Runmode=Y, Stock Name=Dabur India Ltd., Purchase Price=50, Date Of Purchase=11/6/14, Quantity=30, B...)">
+                  </a> <!-- AddStockTest({Runmode=Y, Stock Name=Dabur India Ltd., Purchase Price=50, Date Of Purchase=11/6/14, Quantity=30, B...) -->
+                  <span class="method-name">AddStockTest</span>
+                  <span class="parameters">({Runmode=Y, Stock Name=Dabur India Ltd., Purchase Price=50, Date Of Purchase=11/6/14, Quantity=30, Browser=Chrome, Result=})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Stock_Suite-class-passed -->
+        </div> <!-- panel Stock_Suite -->
+        <div panel-name="suite-Portfolio_Test" class="panel Portfolio_Test">
+          <div class="suite-Portfolio_Test-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.qtpselenium.framework.datadriven.PortFolioSuite.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="LoginTest({Username=C22, Password=C33, Runmode=Y, Expected_Result=SUCCESS, Browser=Mozilla, Result=})">
+                  </a> <!-- LoginTest({Username=C22, Password=C33, Runmode=Y, Expected_Result=SUCCESS, Browser=Mozilla, Result=}) -->
+                  <span class="method-name">LoginTest</span>
+                  <span class="parameters">({Username=C22, Password=C33, Runmode=Y, Expected_Result=SUCCESS, Browser=Mozilla, Result=})</span>
+                  <div class="stack-trace">java.lang.NoClassDefFoundError: org/w3c/dom/ElementTraversal
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClassCond(Unknown Source)
+	at java.lang.ClassLoader.defineClass(Unknown Source)
+	at java.security.SecureClassLoader.defineClass(Unknown Source)
+	at java.net.URLClassLoader.defineClass(Unknown Source)
+	at java.net.URLClassLoader.access$000(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.apache.xerces.parsers.AbstractDOMParser.startDocument(Unknown Source)
+	at org.apache.xerces.impl.dtd.XMLDTDValidator.startDocument(Unknown Source)
+	at org.apache.xerces.impl.XMLDocumentScannerImpl.startEntity(Unknown Source)
+	at org.apache.xerces.impl.XMLVersionDetector.startDocumentParsing(Unknown Source)
+	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+	at org.apache.xerces.parsers.XMLParser.parse(Unknown Source)
+	at org.apache.xerces.parsers.DOMParser.parse(Unknown Source)
+	at org.apache.xerces.jaxp.DocumentBuilderImpl.parse(Unknown Source)
+	at javax.xml.parsers.DocumentBuilder.parse(Unknown Source)
+	at org.openqa.selenium.firefox.internal.FileExtension.readIdFromInstallRdf(FileExtension.java:97)
+	at org.openqa.selenium.firefox.internal.FileExtension.writeTo(FileExtension.java:60)
+	at org.openqa.selenium.firefox.internal.ClasspathExtension.writeTo(ClasspathExtension.java:63)
+	at org.openqa.selenium.firefox.FirefoxProfile.installExtensions(FirefoxProfile.java:465)
+	at org.openqa.selenium.firefox.FirefoxProfile.layoutOnDisk(FirefoxProfile.java:443)
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:77)
+	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:244)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:110)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:188)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:183)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:179)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:92)
+	at com.qtpselenium.framwork.datadriven.TestBase.openBrowser(TestBase.java:90)
+	at com.qtpselenium.framwork.datadriven.TestBase.doLogin(TestBase.java:198)
+	at com.qtpselenium.framework.datadriven.PortFolioSuite.LoginTest.LoginTest(LoginTest.java:31)
+Caused by: java.lang.ClassNotFoundException: org.w3c.dom.ElementTraversal
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 62 more
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Portfolio_Test-class-failed -->
+          <div class="suite-Portfolio_Test-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.qtpselenium.framework.datadriven.PortFolioSuite.LeastPerAssetsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="LeastPerAssetsTest({Runmode=N, Browser=Chrome, Result=})">
+                  </a> <!-- LeastPerAssetsTest({Runmode=N, Browser=Chrome, Result=}) -->
+                  <span class="method-name">LeastPerAssetsTest</span>
+                  <span class="parameters">({Runmode=N, Browser=Chrome, Result=})</span>
+                  <div class="stack-trace">org.testng.SkipException: Skipping the test LeastPerAssetsTest inside the test suite PortFolioSuite
+	at com.qtpselenium.framwork.datadriven.TestBase.ValidateRunmodes(TestBase.java:78)
+	at com.qtpselenium.framework.datadriven.PortFolioSuite.LeastPerAssetsTest.LeastPerAssetsTest(LeastPerAssetsTest.java:29)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="LeastPerAssetsTest({Runmode=N, Browser=Chrome, Result=})">
+                  </a> <!-- LeastPerAssetsTest({Runmode=N, Browser=Chrome, Result=}) -->
+                  <span class="method-name">LeastPerAssetsTest</span>
+                  <span class="parameters">({Runmode=N, Browser=Chrome, Result=})</span>
+                  <div class="stack-trace">org.testng.SkipException: Skipping the test LeastPerAssetsTest inside the test suite PortFolioSuite
+	at com.qtpselenium.framwork.datadriven.TestBase.ValidateRunmodes(TestBase.java:78)
+	at com.qtpselenium.framework.datadriven.PortFolioSuite.LeastPerAssetsTest.LeastPerAssetsTest(LeastPerAssetsTest.java:29)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Portfolio_Test-class-skipped -->
+          <div class="suite-Portfolio_Test-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.qtpselenium.framework.datadriven.PortFolioSuite.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="LoginTest({Username=C23, Password=C34, Runmode=N, Expected_Result=FAILURE, Browser=Chrome, Result=})">
+                  </a> <!-- LoginTest({Username=C23, Password=C34, Runmode=N, Expected_Result=FAILURE, Browser=Chrome, Result=}) -->
+                  <span class="method-name">LoginTest</span>
+                  <span class="parameters">({Username=C23, Password=C34, Runmode=N, Expected_Result=FAILURE, Browser=Chrome, Result=})</span>
+                  <div class="stack-trace">org.testng.SkipException: Skipping the test LoginTest inside the test suite PortFolioSuite
+	at com.qtpselenium.framwork.datadriven.TestBase.ValidateRunmodes(TestBase.java:78)
+	at com.qtpselenium.framework.datadriven.PortFolioSuite.LoginTest.LoginTest(LoginTest.java:29)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Portfolio_Test-class-skipped -->
+          <div class="suite-Portfolio_Test-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.qtpselenium.framework.datadriven.PortFolioSuite.LeastPerAssetsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="LeastPerAssetsTest({Runmode=Y, Browser=Chrome, Result=})">
+                  </a> <!-- LeastPerAssetsTest({Runmode=Y, Browser=Chrome, Result=}) -->
+                  <span class="method-name">LeastPerAssetsTest</span>
+                  <span class="parameters">({Runmode=Y, Browser=Chrome, Result=})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Portfolio_Test-class-passed -->
+          <div class="suite-Portfolio_Test-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.qtpselenium.framework.datadriven.PortFolioSuite.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="LoginTest({Username=mannusharma.86@gmail.com, Password=caliber, Runmode=Y, Expected_Result=SUCCESS, Browser=Ch...)">
+                  </a> <!-- LoginTest({Username=mannusharma.86@gmail.com, Password=caliber, Runmode=Y, Expected_Result=SUCCESS, Browser=Ch...) -->
+                  <span class="method-name">LoginTest</span>
+                  <span class="parameters">({Username=mannusharma.86@gmail.com, Password=caliber, Runmode=Y, Expected_Result=SUCCESS, Browser=Chrome, Result=})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Portfolio_Test-class-passed -->
+        </div> <!-- panel Portfolio_Test -->
+        <div panel-name="suite-My_Project" class="panel My_Project">
+        </div> <!-- panel My_Project -->
+        <div panel-name="test-xml-Stock_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\deepak sharma\Workspace\webdriver_DataDrivenFramework_TestNG\src\test\resources\StockSuite.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Stock Suite&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.qtpselenium.framwork.datadriven.CustomListener&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test name=&quot;Add Stock Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.qtpselenium.framework.datadriven.StockSuite.AddStockTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Add Stock Test --&gt;
+&lt;/suite&gt; &lt;!-- Stock Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="test-xml-Portfolio_Test" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\deepak sharma\Workspace\webdriver_DataDrivenFramework_TestNG\src\test\resources\PortFolioSuite.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Portfolio Test&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.qtpselenium.framwork.datadriven.CustomListener&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test name=&quot;Login Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.qtpselenium.framework.datadriven.PortFolioSuite.LoginTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Login Test --&gt;
+  &lt;test name=&quot;Least Per Asests Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.qtpselenium.framework.datadriven.PortFolioSuite.LeastPerAssetsTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Least Per Asests Test --&gt;
+&lt;/suite&gt; &lt;!-- Portfolio Test --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="test-xml-My_Project" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\deepak sharma\Workspace\webdriver_DataDrivenFramework_TestNG\src\test\resources\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;My Project&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.qtpselenium.framwork.datadriven.CustomListener&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;suite-files&gt;
+    &lt;suite-file path=&quot;./PortFolioSuite.xml&quot;/&gt;
+    &lt;suite-file path=&quot;./StockSuite.xml&quot;/&gt;
+  &lt;/suite-files&gt;
+&lt;/suite&gt; &lt;!-- My Project --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Stock_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Stock Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Add Stock Test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Portfolio_Test" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Portfolio Test</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Login Test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Least Per Asests Test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-My_Project" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for My Project</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Stock_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Stock Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Portfolio_Test" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Portfolio Test</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-My_Project" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for My Project</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Stock_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Stock Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Stock_Suite');
+function tableData_Stock_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(3);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'AddStockTest')
+data.setCell(0, 2, 'com.qtpselenium.framework.datadriven.StockSuite.AddStockTest')
+data.setCell(0, 3, 11318);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'AddStockTest')
+data.setCell(1, 2, 'com.qtpselenium.framework.datadriven.StockSuite.AddStockTest')
+data.setCell(1, 3, 34);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'AddStockTest')
+data.setCell(2, 2, 'com.qtpselenium.framework.datadriven.StockSuite.AddStockTest')
+data.setCell(2, 3, 33);
+window.suiteTableData['Stock_Suite']= { tableData: data, tableDiv: 'times-div-Stock_Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 11 seconds</span>
+              <div id="times-div-Stock_Suite">
+              </div> <!-- times-div-Stock_Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Portfolio_Test" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Portfolio Test</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Portfolio_Test');
+function tableData_Portfolio_Test() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(6);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'LeastPerAssetsTest')
+data.setCell(0, 2, 'com.qtpselenium.framework.datadriven.PortFolioSuite.LeastPerAssetsTest')
+data.setCell(0, 3, 14227);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'LoginTest')
+data.setCell(1, 2, 'com.qtpselenium.framework.datadriven.PortFolioSuite.LoginTest')
+data.setCell(1, 3, 14043);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'LoginTest')
+data.setCell(2, 2, 'com.qtpselenium.framework.datadriven.PortFolioSuite.LoginTest')
+data.setCell(2, 3, 1506);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'LoginTest')
+data.setCell(3, 2, 'com.qtpselenium.framework.datadriven.PortFolioSuite.LoginTest')
+data.setCell(3, 3, 61);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'LeastPerAssetsTest')
+data.setCell(4, 2, 'com.qtpselenium.framework.datadriven.PortFolioSuite.LeastPerAssetsTest')
+data.setCell(4, 3, 61);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'LeastPerAssetsTest')
+data.setCell(5, 2, 'com.qtpselenium.framework.datadriven.PortFolioSuite.LeastPerAssetsTest')
+data.setCell(5, 3, 37);
+window.suiteTableData['Portfolio_Test']= { tableData: data, tableDiv: 'times-div-Portfolio_Test'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 29 seconds</span>
+              <div id="times-div-Portfolio_Test">
+              </div> <!-- times-div-Portfolio_Test -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-My_Project" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for My Project</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_My_Project');
+function tableData_My_Project() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(0);
+window.suiteTableData['My_Project']= { tableData: data, tableDiv: 'times-div-My_Project'}
+return data;
+}
+              </script>
+              <div id="times-div-My_Project">
+              </div> <!-- times-div-My_Project -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Stock_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Stock Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Portfolio_Test" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Portfolio Test</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-My_Project" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for My Project</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Stock_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Portfolio_Test" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-My_Project" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Stock_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qtpselenium.framework.datadriven.PortFolioSuite.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">before</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">LoginTest({Username=C22, Password=C33, Runmode=Y, Expected_Result=SUCCESS, Browser=Mozilla, Result=})</span>
+                <span class="method-start">865 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">LoginTest({Username=C23, Password=C34, Runmode=N, Expected_Result=FAILURE, Browser=Chrome, Result=})</span>
+                <span class="method-start">2373 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">LoginTest({Username=mannusharma.86@gmail.com, Password=caliber, Runmode=Y, Expected_Result=SUCCESS, Browser=Ch...)</span>
+                <span class="method-start">2435 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qtpselenium.framework.datadriven.PortFolioSuite.LeastPerAssetsTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">before</span>
+                <span class="method-start">16529 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">LeastPerAssetsTest({Runmode=Y, Browser=Chrome, Result=})</span>
+                <span class="method-start">16562 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">LeastPerAssetsTest({Runmode=N, Browser=Chrome, Result=})</span>
+                <span class="method-start">30792 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">LeastPerAssetsTest({Runmode=N, Browser=Chrome, Result=})</span>
+                <span class="method-start">30854 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qtpselenium.framework.datadriven.StockSuite.AddStockTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">before</span>
+                <span class="method-start">31729 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">AddStockTest({Runmode=N, Stock Name=Bharti Airtel Ltd., Purchase Price=100, Date Of Purchase=4/6/13, Quantity=10,...)</span>
+                <span class="method-start">31759 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">AddStockTest({Runmode=N, Stock Name=Wipro Ltd., Purchase Price=200, Date Of Purchase=4/6/14, Quantity=20, Browser...)</span>
+                <span class="method-start">31793 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">AddStockTest({Runmode=Y, Stock Name=Dabur India Ltd., Purchase Price=50, Date Of Purchase=11/6/14, Quantity=30, B...)</span>
+                <span class="method-start">31828 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Portfolio_Test" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qtpselenium.framework.datadriven.PortFolioSuite.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">before</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">LoginTest({Username=C22, Password=C33, Runmode=Y, Expected_Result=SUCCESS, Browser=Mozilla, Result=})</span>
+                <span class="method-start">865 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">LoginTest({Username=C23, Password=C34, Runmode=N, Expected_Result=FAILURE, Browser=Chrome, Result=})</span>
+                <span class="method-start">2373 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">LoginTest({Username=mannusharma.86@gmail.com, Password=caliber, Runmode=Y, Expected_Result=SUCCESS, Browser=Ch...)</span>
+                <span class="method-start">2435 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qtpselenium.framework.datadriven.PortFolioSuite.LeastPerAssetsTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">before</span>
+                <span class="method-start">16529 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">LeastPerAssetsTest({Runmode=Y, Browser=Chrome, Result=})</span>
+                <span class="method-start">16562 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">LeastPerAssetsTest({Runmode=N, Browser=Chrome, Result=})</span>
+                <span class="method-start">30792 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">LeastPerAssetsTest({Runmode=N, Browser=Chrome, Result=})</span>
+                <span class="method-start">30854 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qtpselenium.framework.datadriven.StockSuite.AddStockTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">before</span>
+                <span class="method-start">31729 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">AddStockTest({Runmode=N, Stock Name=Bharti Airtel Ltd., Purchase Price=100, Date Of Purchase=4/6/13, Quantity=10,...)</span>
+                <span class="method-start">31759 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">AddStockTest({Runmode=N, Stock Name=Wipro Ltd., Purchase Price=200, Date Of Purchase=4/6/14, Quantity=20, Browser...)</span>
+                <span class="method-start">31793 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">AddStockTest({Runmode=Y, Stock Name=Dabur India Ltd., Purchase Price=50, Date Of Purchase=11/6/14, Quantity=30, B...)</span>
+                <span class="method-start">31828 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-My_Project" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qtpselenium.framework.datadriven.PortFolioSuite.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">before</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">LoginTest({Username=C22, Password=C33, Runmode=Y, Expected_Result=SUCCESS, Browser=Mozilla, Result=})</span>
+                <span class="method-start">865 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">LoginTest({Username=C23, Password=C34, Runmode=N, Expected_Result=FAILURE, Browser=Chrome, Result=})</span>
+                <span class="method-start">2373 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">LoginTest({Username=mannusharma.86@gmail.com, Password=caliber, Runmode=Y, Expected_Result=SUCCESS, Browser=Ch...)</span>
+                <span class="method-start">2435 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qtpselenium.framework.datadriven.PortFolioSuite.LeastPerAssetsTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">before</span>
+                <span class="method-start">16529 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">LeastPerAssetsTest({Runmode=Y, Browser=Chrome, Result=})</span>
+                <span class="method-start">16562 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">LeastPerAssetsTest({Runmode=N, Browser=Chrome, Result=})</span>
+                <span class="method-start">30792 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">LeastPerAssetsTest({Runmode=N, Browser=Chrome, Result=})</span>
+                <span class="method-start">30854 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qtpselenium.framework.datadriven.StockSuite.AddStockTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">before</span>
+                <span class="method-start">31729 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">AddStockTest({Runmode=N, Stock Name=Bharti Airtel Ltd., Purchase Price=100, Date Of Purchase=4/6/13, Quantity=10,...)</span>
+                <span class="method-start">31759 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">AddStockTest({Runmode=N, Stock Name=Wipro Ltd., Purchase Price=200, Date Of Purchase=4/6/14, Quantity=20, Browser...)</span>
+                <span class="method-start">31793 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">AddStockTest({Runmode=Y, Stock Name=Dabur India Ltd., Purchase Price=50, Date Of Purchase=11/6/14, Quantity=30, B...)</span>
+                <span class="method-start">31828 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

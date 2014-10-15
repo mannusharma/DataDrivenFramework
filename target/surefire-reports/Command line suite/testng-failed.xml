@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Command line suite]">
+  <test name="Command line test(failed)" preserve-order="false">
+    <classes>
+      <class name="com.qtpselenium.framework.datadriven.PortFolioSuite.LoginTest">
+        <methods>
+          <include name="before"/>
+          <include name="LoginTest" invocation-numbers="0 1 2"/>
+        </methods>
+      </class>
+      <class name="com.qtpselenium.framework.datadriven.PortFolioSuite.LeastPerAssetsTest">
+        <methods>
+          <include name="before"/>
+          <include name="LeastPerAssetsTest" invocation-numbers="1 2"/>
+        </methods>
+      </class>
+      <class name="com.qtpselenium.framework.datadriven.StockSuite.Test2">
+        <methods>
+          <include name="test2"/>
+        </methods>
+      </class>
+      <class name="com.qtpselenium.framework.datadriven.StockSuite.AddStockTest">
+        <methods>
+          <include name="AddStockTest" invocation-numbers="0 1 2"/>
+          <include name="before"/>
+        </methods>
+      </class>
+    </classes>
+  </test>
+</suite>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Portfolio Test]">
+  <listeners>
+    <listener class-name="com.qtpselenium.framwork.datadriven.CustomListener"/>
+  </listeners>
+  <test name="Login Test(failed)">
+    <classes>
+      <class name="com.qtpselenium.framework.datadriven.PortFolioSuite.LeastPerAssetsTest">
+        <methods>
+          <include name="before"/>
+        </methods>
+      </class> <!-- com.qtpselenium.framework.datadriven.PortFolioSuite.LeastPerAssetsTest -->
+      <class name="com.qtpselenium.framework.datadriven.PortFolioSuite.LoginTest">
+        <methods>
+          <include name="before"/>
+          <include name="LoginTest" invocation-numbers="0 1"/>
+        </methods>
+      </class> <!-- com.qtpselenium.framework.datadriven.PortFolioSuite.LoginTest -->
+    </classes>
+  </test> <!-- Login Test(failed) -->
+  <test name="Least Per Asests Test(failed)">
+    <classes>
+      <class name="com.qtpselenium.framework.datadriven.PortFolioSuite.LeastPerAssetsTest">
+        <methods>
+          <include name="before"/>
+          <include name="LeastPerAssetsTest" invocation-numbers="1 2"/>
+        </methods>
+      </class> <!-- com.qtpselenium.framework.datadriven.PortFolioSuite.LeastPerAssetsTest -->
+      <class name="com.qtpselenium.framework.datadriven.PortFolioSuite.LoginTest">
+        <methods>
+          <include name="before"/>
+        </methods>
+      </class> <!-- com.qtpselenium.framework.datadriven.PortFolioSuite.LoginTest -->
+    </classes>
+  </test> <!-- Least Per Asests Test(failed) -->
+</suite> <!-- Failed suite [Portfolio Test] -->

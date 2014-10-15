@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="com.qtpselenium.framework.datadriven.StockSuite.AddStockTest">
+        <methods>
+          <include name="AddStockTest" invocation-numbers="0 1 2"/>
+          <include name="before"/>
+        </methods>
+      </class> <!-- com.qtpselenium.framework.datadriven.StockSuite.AddStockTest -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
